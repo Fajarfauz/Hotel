@@ -12,7 +12,7 @@ declare global {
 }
 
 const PaymentButton = ({ reservation }: { reservation: reservationProps }) => {
-  const [isPending, stratTransition] = useTransition();
+  const [isPending, startTransition] = useTransition();
   const handlePayment = async () => {
     startTransition(async () => {
       try {
