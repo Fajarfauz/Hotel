@@ -15,7 +15,7 @@ export const POST = async (request: Request) => {
   const parameter = {
     transaction_details: {
       order_id: reservation.id,
-      gross_amount: reservation.Payment?.[0]?.amount || 0,
+      gross_amount: reservation.Payment?.amount || 0,
     },
     credit_card: {
       secure: true,
