@@ -42,7 +42,7 @@ const CheckoutDetail = async ({ reservationId }: { reservationId: string }) => {
         </div>
         {/* Payment button */}
         {reservation.Payment && (
-          <PaymentButton reservation={{ ...reservation, Payment: [reservation.Payment] }} />
+          <PaymentButton reservation={reservation} />
         )}
       </div>
       <div className="border border-gray-200 px-3 py-5 bg-white rounded-sm">
