@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const MyReserveList = async () => {
   const reservation = await getReservationByUserId();
-  if (!reservation) return notFound;
+  if (!reservation) return notFound();
 
   return (
     <div>
